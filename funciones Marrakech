@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+void menu(char a) {
+    switch (a) {
+        case 'a':
+            cout << "Las reglas son:" << endl;
+            cout << "1. Hazam puede moverse a cualquier direccion, menos hacia atras segun el numero que indique el dado" << endl;
+            cout << "2. Cuando Hazam se va a salir del tablero, da una vuelta segun su direccion" << endl;
+            cout << "3. En la casilla en la que Hazam cae se puede poner una alfombra de 2x2 del color del jugador que acaba de moverlo, en dirección izquierda, derecha, al frente, menos atras" << endl;
+            cout << "4. Cuando Hazam cae en una alfombra que no es del color del jugador que acaba de moverlo, se le cobra una cantidad de dinero, de acuerdo a las alfombras adyacentes del mismo color del jugador" << endl;
+            cout << "5. El jugador que mueve a Hazam y pone una alfombra solo puede cubrir la mitad de la alfombra de otro jugador pero no completa" << endl;
+            cout << "6. Si la cantidad de monedas de un jugador es 0, pierde automáticamente" << endl;
+            cout << "7. Cuando el tablero está completamente lleno de alfombras se termina el juego" << endl;
+            cout << "8. Gana el jugador que cuente con más monedas y alfombras visibles en el tablero" << endl;
+            break;
+        default:
+            cout << "Has elegido saltarte el menu" << endl;
+            break;
+    }
+}
+
+int main() {
+    char a;
+    cout << "Digite 'a' para desplegar el menú" << endl;
+    cin >> a;
+    menu(a);
+    return 0;
+}
+
+
+
+
+
